@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="shortcut icon" href="./img/icon.png" type="image/x-png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,200&display=swap"
+    rel="stylesheet" />
+
+  <title>Agenda 100% confiável</title>
+</head>
+<body>
+  <h1 class="mainTitle">Agenda 100% confiável</h1>
+  <div class="containerBody">
+    <div class="dadosPessoais">
+      <!--Self info. Form-->
+      <h1 class="title">Dados pessoais:</h1>
+
+      <label for="name">Nome: </label>
+      <input type="text" placeholder="Digite Seu Nome" id="name" />
+      <br />
+      <label for="lastName">Sobrenome: </label>
+      <input type="text" placeholder="Digite Seu Sobrenome" id="lastName" />
+      <br />
+
+      <label for="cpf">CPF: </label>
+      <input type="tel" placeholder="Digite Seu CPF" maxlength="11" id="cpf" />
+      <br />
+
+      <label for="date">Data de nascimento: </label>
+      <input type="date" id="date" />
+      <br />
+
+      <label for="email">Email: </label>
+      <input type="email" id="email" placeholder="Digite seu Email" />
+      <br />
+
+      <label for="telNum">Número de telefone: </label>
+      <input type="number" id="telNum" maxlength="9" placeholder="Digite seu telefone" />
+      <br />
+    </div>
+    <!--Adrss. Form-->
+    <h1 class="title">Endereço:</h1>
+
+    <label for="cep">CEP: </label>
+    <input type="number" placeholder="Digite seu CEP: " id="cep" maxlength="8" />
+    <br />
+
+    <label for="road">Rua: </label>
+    <input type="text" placeholder="Digite Sua Rua: " id="road" />
+    <br />
+
+    <label for="num">Número: </label>
+    <input type="text" placeholder="Digite o núm. da res.: " id="num" maxlength="4" />
+    <br />
+
+    <label for="city">Cidade: </label>
+    <input type="text" placeholder="Digite sua cidade: " id="city" />
+    <br />
+
+    <!--Save & Download Btns-->
+    <button class="send">Enviar</button>
+    <button class="down" onclick="downloadBtn()">Download</button>
+
+    <div class="sendFile">
+      <!--Send Button-->
+      <h1 class="title">Enviar Arquivo:</h1>
+      <input type="file" id="file" />
+      <br>
+      <!--Text display-->
+      <textarea cols="40" rows="50" type="text" id="output" readonly></textarea>
+    </div>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
